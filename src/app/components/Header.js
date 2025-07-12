@@ -10,10 +10,10 @@ export default function Home(){
                     width={60}
                     height={70}
                 />
-                <h1>CITRUSDOCS</h1>
+                <h1 className="text-[color:var(--title)] font-bold text-xl">CITRUSDOCS</h1>
             </div>
-            <nav className="pr-18">
-                <ul className="flex flex-row gap-6">
+            <nav className="pr-18 text-[color:var(--subtitle)]">
+                <ul className="flex flex-row gap-6 text-lg">
                     <li>Home</li>
                     <li>Sobre nós</li>
                     <li>Documentação</li>
