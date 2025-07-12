@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home(){
     return (
-        <header className="flex flex-row justify-between items-center py-3">
+        <header className="flex flex-row justify-between items-center py-3 shadow-md">
             <div className="flex flex-row items-center pl-18">
                 <Image 
                     src="/citrus-docs.png"
