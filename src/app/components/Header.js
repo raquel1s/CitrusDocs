@@ -14,7 +14,11 @@ export default function Home(){
             </div>
             <nav className="pr-18 text-[color:var(--subtitle)]">
                 <ul className="flex flex-row gap-6 text-lg">
-                    <li>Home</li>
+                    <li>
+                        <Link href="../">
+                            Home
+                        </Link>
+                    </li>
                     <li>Sobre nós</li>
                     <li>Documentação</li>
                 </ul>
