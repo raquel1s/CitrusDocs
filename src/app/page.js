@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
@@ -10,9 +12,10 @@ export default function Home() {
             PLATAFORMA DE DOCUMENTAÇÕES PARA INSTITUIÇÕES
           </h1>
           <p className="mt-7 text-2xl text-[color:var(--subtitle)]">Organização com um toque cítrico de agilidade.</p>
-          <button className="mt-16 px-6 py-2 bg-[var(--primary-color)] text-white rounded text-lg">
-            Confira nossa última documentação
-          </button>
+          <Link href="/docs/introducao"
+          className="mt-16 px-6 py-2 bg-[var(--primary-color)] text-white rounded text-lg">
+              Confira nossa última documentação
+          </Link>
         </header>
       </div>
     </main>
