@@ -37,8 +37,12 @@ export default function Sidebar() {
                         </button>
                         {openMenu === "funcionalidades-principais" && (
                             <ul>
-                                <Link href="../docs/preenchimento-representantes">Preenchimento Diário pelos Representantes</Link>
-                                <Link href="../docs/edicao-pedagogico">Edição e Personalização pela Equipe Pedagógica</Link>
+                                <li>
+                                    <Link href="../docs/preenchimento-representantes">Preenchimento Diário pelos Representantes</Link>
+                                </li>
+                                <li>
+                                    <Link href="../docs/edicao-pedagogico">Edição e Personalização pela Equipe Pedagógica</Link>
+                                </li>
                             </ul>
                         )}
                     </li>
@@ -54,8 +58,12 @@ export default function Sidebar() {
                         </button>
                         {openMenu === "recursos-uteis" && (
                             <ul>
-                                <Link href="../docs/erros-comuns-e-solucoes">Erros Comuns e Soluções</Link>
-                                <Link href="../docs/dicas-e-atalhos">Dicas e Atalhos</Link>
+                                <li>
+                                    <Link href="../docs/erros-comuns-e-solucoes">Erros Comuns e Soluções</Link>
+                                </li>
+                                <li>
+                                    <Link href="../docs/dicas-e-atalhos">Dicas e Atalhos</Link>
+                                </li>
                             </ul>
                         )}
                     </li>
