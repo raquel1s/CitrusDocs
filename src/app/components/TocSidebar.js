@@ -2,11 +2,11 @@ import { ArrowUp } from 'lucide-react';
 
 export default function TocSidebar({titles}){
     return(
-        <nav className="pl-12">
+        <nav className="px-12">
             <h2 className="font-bold text-xl" id="topo">
                 Nesse documento
             </h2>
-                <div className="flex flex-col justify-between min-h-screen">
+                <div className="flex flex-col justify-between h-screen">
                     <ul className="mt-5 flex flex-col gap-2">
                     {titles.map(({text,id}) => (
                         <li key={id}>

@@ -21,13 +21,13 @@ export default function Sidebar() {
             <div className="mt-5">
                 <ul className="text-[color:var(--title)] flex flex-col gap-2">
                     <li>
-                        <Link href="../docs/introducao">Introdução</Link>
+                        <Link href="/docs/introducao">Introdução</Link>
                     </li>
                     <li>
-                        <Link href="../docs/pre-requisitos">Pré-requisitos</Link>
+                        <Link href="/docs/pre-requisitos">Pré-requisitos</Link>
                     </li>
                     <li>
-                        <Link href="../docs/interface-e-navegacao">Interface e Navegação</Link>
+                        <Link href="/docs/interface-e-navegacao">Interface e Navegação</Link>
                     </li>
                     <li>
                         <button onClick={() => toggleMenu("funcionalidades-principais")}
@@ -44,12 +44,12 @@ export default function Sidebar() {
                         {openMenus.includes("funcionalidades-principais") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="../docs/preenchimento-representantes">
+                                    <Link href="/docs/funcionalidades-principais/preenchimento-representantes">
                                         Preenchimento Diário pelos Representantes
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="../docs/edicao-pedagogico">
+                                    <Link href="/docs/funcionalidades-principais/edicao-pedagogico">
                                         Edição e Personalização pela Equipe Pedagógica
                                     </Link>
                                 </li>
@@ -57,7 +57,7 @@ export default function Sidebar() {
                         )}
                     </li>
                     <li>
-                        <Link href="../docs/configuracoes-e-personalizacao">
+                        <Link href="/docs/configuracoes-e-personalizacao">
                             Configurações e Personalização
                         </Link>
                     </li>
@@ -76,18 +76,18 @@ export default function Sidebar() {
                         {openMenus.includes("recursos-uteis") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="../docs/erros-comuns-e-solucoes">
+                                    <Link href="/docs/recursos-uteis/erros-comuns-e-solucoes">
                                         Erros Comuns e Soluções
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="../docs/dicas-e-atalhos">Dicas e Atalhos</Link>
+                                    <Link href="/docs/recursos-uteis/dicas-e-atalhos">Dicas e Atalhos</Link>
                                 </li>
                             </ul>
                         )}
                     </li>
                     <li>
-                        <Link href="../docs/referencias-e-creditos">
+                        <Link href="/docs/referencias-e-creditos">
                             Referências e Créditos
                         </Link>
                     </li>
