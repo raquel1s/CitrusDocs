@@ -21,14 +21,14 @@ export default function DocLayout({ children }) {
     }, []);
 
     return (
-        <div>
-            <aside>
+        <div className='grid grid-cols-4 gap-14 mt-10 text-[color:var(--title)]'>
+            <aside className='col-span-1'>
                 <Sidebar />
             </aside>
-            <main ref={contentRef}>
+            <main ref={contentRef} className='col-span-2 main-content min-h-screen'>
                 {children}
             </main>
-            <aside>
+            <aside className='col-span-1'>
                 <TocSidebar titles={titles} />
             </aside>
         </div>

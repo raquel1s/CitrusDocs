@@ -20,3 +20,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.main-content h1 {
+  @apply text-3xl font-bold mb-10 text-center text-[color:var(--title)];
+}
+
+.main-content h2{
+  @apply text-2xl font-semibold mb-5;
+}
+
+.main-content p{
+  @apply text-justify mb-8;
+}
+
+.main-content ul{
+  @apply list-disc pl-10 flex flex-col gap-4.5 mb-8;
+}
+
+.main-content span{
+  @apply font-semibold;
+}
+
+.main-content li{
+  @apply text-justify;
+}

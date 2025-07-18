@@ -2,46 +2,56 @@
 
 import { useState } from "react";
 import Link from 'next/link';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function Sidebar() {
-    const [openMenu, setOpenMenu] = useState(null);
+    const [openMenus, setOpenMenus] = useState([]);
 
     const toggleMenu = (menuName) => {
-        setOpenMenu(openMenu === menuName ? null : menuName);
+        setOpenMenus(prev =>
+            prev.includes(menuName)
+                ? prev.filter(name => name !== menuName)
+                : [...prev, menuName]
+        );
     };
 
     return (
-        <nav>
-            <h2>Diário de bordo</h2>
-            <div>
-                <ul>
+        <nav className="pl-7">
+            <h2 className="font-bold text-xl">Diário de bordo</h2>
+            <div className="mt-5">
+                <ul className="text-[color:var(--title)] flex flex-col gap-2">
                     <li>
-                        <Link href="../docs/introducao">
-                            Introdução
-                        </Link>
+                        <Link href="../docs/introducao">Introdução</Link>
                     </li>
                     <li>
-                        <Link href="../docs/pre-requisitos">
-                            Pré-requisitos
-                        </Link>
+                        <Link href="../docs/pre-requisitos">Pré-requisitos</Link>
                     </li>
                     <li>
-                        <Link href="../docs/interface-e-navegacao">
-                            Interface e Navegação
-                        </Link>
+                        <Link href="../docs/interface-e-navegacao">Interface e Navegação</Link>
                     </li>
                     <li>
-                        <button onClick={() => toggleMenu("funcionalidades-principais")}>
+                        <button onClick={() => toggleMenu("funcionalidades-principais")}
+                            className="flex flex-row gap-3 items-center">
                             Funcionalidades Principais
-                            <span>{openMenu === "funcionalidades-principais" ? "▲" : "▼"}</span>
+                            <span>
+                                {openMenus.includes("funcionalidades-principais") ? (
+                                    <ChevronUp size={18} />
+                                ) : (
+                                    <ChevronDown size={18} />
+                                )}
+                            </span>
                         </button>
-                        {openMenu === "funcionalidades-principais" && (
-                            <ul>
+                        {openMenus.includes("funcionalidades-principais") && (
+                            <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="../docs/preenchimento-representantes">Preenchimento Diário pelos Representantes</Link>
+                                    <Link href="../docs/preenchimento-representantes">
+                                        Preenchimento Diário pelos Representantes
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link href="../docs/edicao-pedagogico">Edição e Personalização pela Equipe Pedagógica</Link>
+                                    <Link href="../docs/edicao-pedagogico">
+                                        Edição e Personalização pela Equipe Pedagógica
+                                    </Link>
                                 </li>
                             </ul>
                         )}
@@ -52,14 +62,23 @@ export default function Sidebar() {
                         </Link>
                     </li>
                     <li>
-                        <button onClick={() => toggleMenu("recursos-uteis")}>
+                        <button onClick={() => toggleMenu("recursos-uteis")}
+                            className="flex flex-row gap-3 items-center">
                             Recursos Úteis
-                            <span>{openMenu === "recursos-uteis" ? "▲" : "▼"}</span>
+                            <span>
+                                {openMenus.includes("recursos-uteis") ? (
+                                    <ChevronUp size={18} />
+                                ) : (
+                                    <ChevronDown size={18} />
+                                )}
+                            </span>
                         </button>
-                        {openMenu === "recursos-uteis" && (
-                            <ul>
+                        {openMenus.includes("recursos-uteis") && (
+                            <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="../docs/erros-comuns-e-solucoes">Erros Comuns e Soluções</Link>
+                                    <Link href="../docs/erros-comuns-e-solucoes">
+                                        Erros Comuns e Soluções
+                                    </Link>
                                 </li>
                                 <li>
                                     <Link href="../docs/dicas-e-atalhos">Dicas e Atalhos</Link>
@@ -75,5 +94,5 @@ export default function Sidebar() {
                 </ul>
             </div>
         </nav>
-    )
+    );
 }

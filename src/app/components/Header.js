@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home(){
     return (
@@ -14,9 +15,9 @@ export default function Home(){
             </div>
             <nav className="pr-18 text-[color:var(--subtitle)]">
                 <ul className="flex flex-row gap-6 text-lg">
-                    <li>Home</li>
-                    <li>Sobre nós</li>
-                    <li>Documentação</li>
+                    <li><Link href="../">Home</Link></li>
+                    <li><Link href="../">Sobre nós</Link></li>
+                    <li><Link href="../docs/introducao">Documentação</Link></li>
                 </ul>
             </nav>
         </header>
