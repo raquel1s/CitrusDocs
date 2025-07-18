@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home(){
     return (
-        <header className="flex flex-row justify-between items-center py-3 shadow-md">
+        <header className="flex flex-row justify-between items-center py-3 shadow-md bg-white">
             <div className="flex flex-row items-center pl-18">
                 <Image 
                     src="/citrus-docs.png"
