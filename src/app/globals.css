@@ -26,11 +26,15 @@ body {
 }
 
 .main-content h2{
-  @apply text-2xl font-semibold mb-5;
+  @apply text-2xl font-semibold my-8;
+}
+
+.main-content h3{
+  @apply text-lg font-semibold my-5;
 }
 
 .main-content p{
-  @apply text-justify mb-8;
+  @apply text-justify mb-4;
 }
 
 .main-content ul{
