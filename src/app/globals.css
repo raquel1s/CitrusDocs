@@ -50,3 +50,7 @@ body {
 .main-content li{
   @apply text-justify;
 }
+
+.main-content a{
+  @apply hover:text-[var(--primary-color)]
+}

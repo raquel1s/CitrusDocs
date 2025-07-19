@@ -44,12 +44,12 @@ export default function Sidebar() {
                         {openMenus.includes("funcionalidades-principais") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="/docs/funcionalidades-principais/preenchimento-representantes">
+                                    <Link href="/docs/funcionalidades-principais/preenchimento-representantes" className="underline underline-offset-1">
                                         Preenchimento Diário pelos Representantes
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/docs/funcionalidades-principais/edicao-pedagogico">
+                                    <Link href="/docs/funcionalidades-principais/edicao-pedagogico" className="underline underline-offset-1">
                                         Edição e Personalização pela Equipe Pedagógica
                                     </Link>
                                 </li>
@@ -76,12 +76,12 @@ export default function Sidebar() {
                         {openMenus.includes("recursos-uteis") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="/docs/recursos-uteis/erros-comuns-e-solucoes">
+                                    <Link href="/docs/recursos-uteis/erros-comuns-e-solucoes" className="underline underline-offset-1">
                                         Erros Comuns e Soluções
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/docs/recursos-uteis/dicas-e-atalhos">Dicas e Atalhos</Link>
+                                    <Link href="/docs/recursos-uteis/dicas-e-atalhos" className="underline underline-offset-1">Dicas e Atalhos</Link>
                                 </li>
                             </ul>
                         )}
