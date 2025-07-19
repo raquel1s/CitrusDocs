@@ -18,7 +18,7 @@ export default function Home() {
         </header>
       </div>
 
-      <section className='p-10'>
+      <section id="sobre-nos" className='p-10'>
         <h2 className="text-xl font-semibold text-[color:var(--title)]">SOBRE NÓS</h2>
         <div className="pt-6 flex flex-row gap-15">
           <div className='relative w-[250px] h-[250px] group'>

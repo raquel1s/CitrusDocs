@@ -6,6 +6,10 @@ export default function Home() {
         <header className="flex flex-row justify-between items-center py-3 shadow-md bg-white">
             <Link href={"/"}>
                 <div className="flex flex-row items-center pl-18">
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> 11b0c6a (arrumando o header)
                     <Image
                         src="/citrus-docs.png"
                         alt="limão siciliano"
