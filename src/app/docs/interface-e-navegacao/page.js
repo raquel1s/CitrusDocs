@@ -1,4 +1,5 @@
 import DocLayout from "@/app/components/DocLayout";
+import Image from "next/image";
 
 export default function InterfaceNavegacao(){
     return(
@@ -21,10 +22,40 @@ export default function InterfaceNavegacao(){
             <p>Cada seção dedicada a uma turma contém:</p>
             <ul>
                 <li>Campo com nome do representante;</li>
+                <Image
+                    src="/nome-representante.png"
+                    alt="campo com o nome do representante"
+                    width={650}
+                    height={150}
+                />
                 <li>Data do expediente (com orientação de preenchimento);</li>
+                <Image
+                    src="/data-expediente.png"
+                    alt="campo com a data do expediente"
+                    width={650}
+                    height={150}
+                />
                 <li>Lista de alunos ausentes;</li>
+                <Image
+                    src="/alunos-ausentes.png"
+                    alt="campo com os alunos ausentes"
+                    width={650}
+                    height={200}
+                />
                 <li>Seleção de unidade curricular e professor (1º e 2º períodos);</li>
+                <Image
+                    src="/unidade-e-professor.png"
+                    alt="campo com a unidade e o professor"
+                    width={650}
+                    height={300}
+                />
                 <li>Campo de descrição das atividades realizadas (1º e 2º períodos).</li>
+                <Image
+                    src="/descricao.png"
+                    alt="campo com a descrição"
+                    width={650}
+                    height={300}
+                />
             </ul>
             <p>As seções podem ser duplicadas, movidas ou personalizadas de acordo com o padrão definido pela equipe CitrusDocs.</p>
         </DocLayout>
