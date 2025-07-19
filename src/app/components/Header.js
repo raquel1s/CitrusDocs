@@ -3,17 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-<<<<<<< HEAD
-        <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md flex justify-between items-center py-4 px-8">
-            <Link href={"../"}>
-            <div className="flex flex-row items-center pl-18">
-                
-=======
         <header className="flex flex-row justify-between items-center py-3 shadow-md bg-white">
             <Link href={"/"}>
                 <div className="flex flex-row items-center pl-18">
-
->>>>>>> 3be5626 (Melhorando a home)
                     <Image
                         src="/citrus-docs.png"
                         alt="limão siciliano"
