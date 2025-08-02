@@ -1,11 +1,11 @@
-export default function Footer(){
-    return(
-        <footer className="mt-10 flex flex-row justify-between w-full bg-[var(--primary-color)] p-4 px-40 text-white font-bold text-center">
-            <p className="p-4">© 2025 CitrusDocs. Todos os direitos reservados.</p>
-            <div className=" g-2">
-                <p>30/05/2025 - 00/00/0000</p>
-                <p>Disciplina: Documentação de Sistemas</p>
-            </div>
-        </footer>
-    )
+export default function Footer() {
+  return (
+    <footer className="flex flex-col sm:flex-row justify-between items-center w-full bg-[var(--primary-color)] text-white font-bold text-center text-sm sm:text-base px-4 sm:px-10 py-6 gap-4 sm:gap-0">
+      <p>© 2025 CitrusDocs. Todos os direitos reservados.</p>
+      <div className="text-center sm:text-right">
+        <p>30/05/2025 - 00/00/0000</p>
+        <p>Disciplina: Documentação de Sistemas</p>
+      </div>
+    </footer>
+  );
 }
