@@ -10,7 +10,7 @@ export default function DicasAtalhos(){
                 <Image
                     className="pt-5 pb-10"
                     src="/usar-visualizar.png"
-                    alt="Campo de seleção de curso"
+                    alt="Icone de visualizar"
                     width={250}
                     height={150}
                 />
@@ -18,7 +18,7 @@ export default function DicasAtalhos(){
                 <Image
                     className="pt-5 pb-10"
                     src="/fazer-backups.png"
-                    alt="Campo de seleção de curso"
+                    alt="Imagem de funcionalidade de fazer cópia"
                     width={350}
                     height={150}
                 />
@@ -27,7 +27,7 @@ export default function DicasAtalhos(){
                 <Image
                     className="pt-5 pb-10"
                     src="/duplicar-sessao.png"
-                    alt="Campo de seleção de curso"
+                    alt="imagem indicando onde duplicar a seção"
                     width={750}
                     height={150}
                 />
@@ -36,7 +36,7 @@ export default function DicasAtalhos(){
                 <Image
                     className="pt-5 pb-10"
                     src="/padronizar-nomes.png"
-                    alt="Campo de seleção de curso"
+                    alt="Imagem de exemplo para nomes"
                     width={250}
                     height={150}
                 />
