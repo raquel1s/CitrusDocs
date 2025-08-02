@@ -23,12 +23,12 @@ export default function EdicaoPedagogico(){
             <ul>
                 <li>Vá ao final do formulário e clique em “Adicionar seção” (ícone de duas barras);</li>
                 <li>Nomeie a nova seção com o nome da turma e curso (ex: Registro - MI81);</li>
-                <li>Copie o conteúdo de uma sessão existente de turma semelhante;</li>
+                <li>Copie o conteúdo de uma seção existente de turma semelhante;</li>
                 <li>Atualize os dados conforme a nova turma</li>
             </ul>
             <Image
                     src="/adicionando-sessao.png"
-                    alt="ir em adicionar nova sessão"
+                    alt="ir em adicionar nova seção"
                     width={650}
                     height={300}
                 />
@@ -38,7 +38,7 @@ export default function EdicaoPedagogico(){
                 <li>Clique nos três pontos (⋮) da pergunta e ative “Ir para a seção com base na resposta”;</li>
                 <Image 
                 src="/opcao-ir-para-sessao.png"
-                alt="selecione a pergunta selecione seu curso"
+                alt="imagem indicando onde fica a opção ir para a seção com base na resposta"
                 width={650}
                 height={300}
             />
@@ -46,7 +46,7 @@ export default function EdicaoPedagogico(){
             </ul>
             <Image
                     src="/redirecionando.png"
-                    alt="ir em adicionar nova sessão"
+                    alt="imagem mostrando onde podemos redirecionar para a seção correta"
                     width={650}
                     height={300}
                 />
@@ -138,7 +138,7 @@ export default function EdicaoPedagogico(){
             <p>Clique para editar as opções e insira o nome do novo curso (ex: “Engenharia de Software”).</p>
             <Image 
                 src="/crie-nova-opcao.png"
-                alt="selecione a pergunta selecione seu curso"
+                alt="imagem mostrando como criar uma nova opção"
                 width={650}
                 height={300}
             />
@@ -147,7 +147,7 @@ export default function EdicaoPedagogico(){
             <p>Vá ao final do formulário e clique em “Adicionar seção” (ícone de duas barras).</p>
             <Image 
                 src="/adicionando-sessao.png"
-                alt="selecione a pergunta selecione seu curso"
+                alt="imagem mostrando como adicionar uma nova seção"
                 width={650}
                 height={300}
             />
@@ -156,7 +156,7 @@ export default function EdicaoPedagogico(){
             <p>Exemplo: “Engenharia de Software”.</p>
             <Image 
                 src="/selecione-turma.png"
-                alt="selecione a pergunta selecione seu curso"
+                alt="imagem mostrando a pergunta selecione sua turma, exemplo de titulo"
                 width={650}
                 height={300}
             />
@@ -174,7 +174,7 @@ export default function EdicaoPedagogico(){
             <p>Ao lado do novo curso, selecione a seção correspondente que você criou.</p>
             <Image 
                 src="/redirecionando.png"
-                alt="selecione a pergunta selecione seu curso"
+                alt="imagem mostrando como fazer o redirecionamento"
                 width={650}
                 height={300}
             />

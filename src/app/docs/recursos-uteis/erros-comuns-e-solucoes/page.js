@@ -12,7 +12,7 @@ export default function ErrosComuns(){
             <Image
                 className="pt-5 pb-10"
                 src="/form-nao-redireciona.png"
-                alt="Campo de seleção de curso"
+                alt="Indicando onde fica ir para seção com base na resposta"
                 width={550}
                 height={150}
             />
@@ -23,7 +23,7 @@ export default function ErrosComuns(){
             <Image
                 className="pt-5 pb-10"
                 src="/repre-nao-aparece.png"
-                alt="Campo de seleção de curso"
+                alt="Campo de representante"
                 width={550}
                 height={150}
             />
@@ -34,7 +34,7 @@ export default function ErrosComuns(){
             <Image
                 className="pt-5 pb-10"
                 src="/aluno-nao-encontrado.png"
-                alt="Campo de seleção de curso"
+                alt="Campo de alunos ausentes"
                 width={550}
                 height={150}
             />
@@ -45,7 +45,7 @@ export default function ErrosComuns(){
             <Image
                 className="pt-5 pb-10"
                 src="/prof-nao-aparece.png"
-                alt="Campo de seleção de curso"
+                alt="Grade de professores e unidades curriculares"
                 width={550}
                 height={150}
             />

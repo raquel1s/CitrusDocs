@@ -18,7 +18,7 @@ export default function PreenchimentoRepresentantes() {
             <Image
                 className="pt-5 pb-10"
                 src="/selecione-turma.png"
-                alt="Campo de seleção de curso"
+                alt="Campo de seleção de turma"
                 width={550}
                 height={150}
             />
