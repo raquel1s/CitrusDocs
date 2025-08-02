@@ -1,4 +1,5 @@
 import DocLayout from "@/app/components/DocLayout";
+import Image from 'next/image';
 
 export default function(){
     return(
@@ -9,21 +10,75 @@ export default function(){
             <p>A equipe pedagógica pode realizar as seguintes configurações de forma segura:</p>
             <ul>
                 <li><span>Atualização de perguntas de múltipla escolha e caixas de seleção: </span>Inclua ou remova opções em campos como lista de turmas, representantes, alunos e professores.</li>
+                <Image 
+                    src="/nome-representante.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={600}
+                />
+                <Image 
+                    src="/alunos-ausentes.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={600}
+                />
+                <Image 
+                    src="/unidade-e-professor.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={600}
+                />
                 <li><span>Edição de títulos e descrições das seções: </span>Adapte os títulos e instruções para que reflitam as necessidades atuais das turmas e cursos.</li>
+                <Image
+                    src="/edicao-titulos.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={300}
+                />
                 <li><span>Reordenação de seções: </span>Utilize o recurso de arrastar para reorganizar a ordem das seções no formulário, facilitando a navegação e a visualização.</li>
+                <Image
+                    src="/arrastar.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={300}
+                />
                 <li><span>Adição de novas perguntas ou campos: </span>Em casos específicos, novos campos podem ser inseridos, desde que mantenham a padronização e não alterem o fluxo de redirecionamento.</li>
+                <Image 
+                    src="/adicao-perguntas-campos.png"
+                    alt="pergunta selecione a turma"
+                    width={250}
+                    height={300}
+                />
             </ul>
             
             <h2>Personalização do sistema</h2>
             <p>O formulário pode ser adaptado conforme o contexto institucional e pedagógico:</p>
             <ul>
                 <li><span>Personalização por curso ou turno: </span>Crie seções específicas para contextos diferentes, como cursos operacionais, técnicos ou por período (manhã, tarde, noite).</li>
+                <Image 
+                    src="/exemplo-um-periodo.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={300}
+                />
                 <li><span>Formatação visual do formulário: </span>É possível alterar o tema do formulário (cores e fonte) na aba de personalização do Google Forms, respeitando a identidade visual da instituição.</li>
+                <Image 
+                    src="/personalizar.png"
+                    alt="pergunta selecione a turma"
+                    width={750}
+                    height={300}
+                />
             </ul>
 
             <h2>Campos que não devem ser alterados</h2>
             <ul>
                 <li>A pergunta <span>“Selecione seu curso”</span> e a navegação entre seções estão pré-configuradas e devem ser alteradas apenas por responsáveis técnicos;</li>
+                <Image 
+                    src="/selecione-curso.png"
+                    alt="pergunta selecione a turma"
+                    width={650}
+                    height={300}
+                />
                 <li>O cabeçalho e a coleta de e-mails também devem ser mantidos como estão.</li>
             </ul>
         </DocLayout>

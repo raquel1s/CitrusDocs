@@ -27,40 +27,40 @@ export default function PreenchimentoRepresentantes() {
                 <li>Representante;</li>
                 <Image
                     className="pt-5 pb-10"
-                    src="/selecione-turma.png"
-                    alt="Campo de seleção de curso"
+                    src="/nome-representante.png"
+                    alt="Campo de representante"
                     width={550}
                     height={150}
                 />
                 <li>Data;</li>
                 <Image
                     className="pt-5 pb-10"
-                    src="/selecione-turma.png"
-                    alt="Campo de seleção de curso"
+                    src="/data-expediente.png"
+                    alt="Campo de seleção da data"
                     width={550}
                     height={150}
                 />
                 <li>Alunos ausentes;</li>
                 <Image
                     className="pt-5 pb-10"
-                    src="/selecione-turma.png"
-                    alt="Campo de seleção de curso"
+                    src="/alunos-ausentes.png"
+                    alt="Campo de seleção de alunos ausentes"
                     width={550}
                     height={150}
                 />
                 <li>UC e professor de cada período;</li>
                 <Image
                     className="pt-5 pb-10"
-                    src="/selecione-turma.png"
-                    alt="Campo de seleção de curso"
+                    src="/unidade-e-professor.png"
+                    alt="Campo de seleção de unidade e professor"
                     width={550}
                     height={150}
                 />
                 <li>Descrição do conteúdo.</li>
                 <Image
                     className="pt-5 pb-10"
-                    src="/selecione-turma.png"
-                    alt="Campo de seleção de curso"
+                    src="/descricao.png"
+                    alt="Campo de seleção de descrição do dia"
                     width={550}
                     height={150}
                 />

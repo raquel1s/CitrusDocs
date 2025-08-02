@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       <section className='p-10 pt-30'>
-        <h2 className="text-xl font-semibold text-[color:var(--title)]">ULTIMAS DOCUMENTAÇÕES</h2>
+        <h2 className="text-xl font-semibold text-[color:var(--title)]">ÚLTIMAS DOCUMENTAÇÕES</h2>
         <div className='flex flex-row gap-10'>
           <div className='pt-6'>
             <Image

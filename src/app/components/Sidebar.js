@@ -49,7 +49,7 @@ export default function Sidebar() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/docs/funcionalidades-principais/edicao-pedagogico" className="underline underline-offset-1">
+                                    <Link href="/docs/funcionalidades-principais/edicao-adm" className="underline underline-offset-1">
                                         Edição e Personalização pela Equipe Pedagógica
                                     </Link>
                                 </li>

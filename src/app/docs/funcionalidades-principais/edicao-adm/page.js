@@ -36,6 +36,12 @@ export default function EdicaoPedagogico(){
             <ul>
                 <li>Volte à pergunta “Selecione sua turma”;</li>
                 <li>Clique nos três pontos (⋮) da pergunta e ative “Ir para a seção com base na resposta”;</li>
+                <Image 
+                src="/opcao-ir-para-sessao.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
                 <li>Ao lado da nova turma, selecione a seção correspondente que você criou.</li>
             </ul>
             <Image
@@ -103,30 +109,78 @@ export default function EdicaoPedagogico(){
             <h2>Excluindo uma turma</h2>
             <ul>
                 <li>Remova a opção da turma na pergunta “Selecione sua turma”;</li>
+                <Image 
+                    src="/excluir-selecione-turma.png"
+                    alt="remover opção da pergunta selecione sua turma"
+                    width={650}
+                    height={300}
+                />
                 <li>Delete a seção correspondente à turma no final do formulário.</li>
+                <Image 
+                    src="/excluir-sessao-turma.png"
+                    alt="remover opção da pergunta selecione sua turma"
+                    width={650}
+                    height={300}
+                />
             </ul>
 
             <h2>Criando um novo curso</h2>
             <h3>1. Acesse a pergunta "Selecione seu curso"</h3>
             <p>Localize a pergunta do tipo múltipla escolha chamada “Selecione seu curso”.</p>
+            <Image 
+                src="/selecione-seu-curso.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
 
             <h3>2. Adicione o novo curso na última opção</h3>
             <p>Clique para editar as opções e insira o nome do novo curso (ex: “Engenharia de Software”).</p>
+            <Image 
+                src="/crie-nova-opcao.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
 
             <h3>3. Crie uma nova seção para o curso</h3>
             <p>Vá ao final do formulário e clique em “Adicionar seção” (ícone de duas barras).</p>
+            <Image 
+                src="/adicionando-sessao.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
 
             <h3>4. Nomeie a nova seção com o nome do curso</h3>
             <p>Exemplo: “Engenharia de Software”.</p>
+            <Image 
+                src="/selecione-turma.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
 
             <h3>5. Configure a navegação para o novo curso</h3>
             <p>Volte à pergunta “Selecione seu curso”.</p>
 
             <p>Clique nos três pontos (⋮) da pergunta e ative “Ir para a seção com base na resposta”.</p>
+            <Image 
+                src="/opcao-ir-para-sessao.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
             <p>Ao lado do novo curso, selecione a seção correspondente que você criou.</p>
+            <Image 
+                src="/redirecionando.png"
+                alt="selecione a pergunta selecione seu curso"
+                width={650}
+                height={300}
+            />
 
             <h3>6. Após criar o curso, adicione as turmas correspondentes</h3>
-            <p>Utilize a pergunta “Selecione sua turma” para incluir as turmas do novo curso, seguindo o passo a passo do item 4.2.1.</p>
+            <p>Utilize a pergunta “Selecione sua turma” para incluir as turmas do novo curso, seguindo o passo a passo do item <a href="#adicionando-uma-nova-turma"><span>adicionando uma nova turma</span></a>.</p>
         </DocLayout>
     )
 }
