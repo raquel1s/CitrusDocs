@@ -7,19 +7,20 @@ export default function Home() {
       {/* Limão de fundo, responsivo e sem vazamento lateral */}
       <div
         className="
-          absolute top-4 left-1/2 -translate-x-1/2 
+          absolute 
+          top-[20px] left-1/2 -translate-x-1/2   /* desce no mobile */
           max-w-[calc(100vw-32px)] w-[200px] h-[200px] 
-          sm:left-auto sm:translate-x-0 sm:right-[-150px]
+          sm:top-4 sm:left-auto sm:translate-x-0 sm:right-[-150px] /* mantém desktop igual */
           sm:max-w-none sm:w-[400px] sm:h-[400px]
           md:w-[600px] md:h-[600px] md:right-[-250px]
           lg:w-[900px] lg:h-[900px] lg:right-[-350px]
           bg-[url('/lemon.png')] bg-no-repeat bg-contain z-0 pointer-events-none
         "
-        style={{ maxWidth: 'calc(100vw - 32px)' }} // evita ultrapassar lateral no mobile
+        style={{ maxWidth: 'calc(100vw - 32px)' }}
       ></div>
 
       {/* Cabeçalho da home */}
-      <div className="relative z-10 px-4 py-24 sm:px-10">
+      <div className="relative z-10 px-4 pt-[220px] pb-24 sm:px-10 sm:pt-24">
         <header className="text-center">
           <h1 className="text-2xl sm:text-4xl font-bold text-[color:var(--title)] leading-snug">
             PLATAFORMA DE DOCUMENTAÇÕES PARA <br /> INSTITUIÇÕES
@@ -35,33 +36,61 @@ export default function Home() {
           </Link>
         </header>
       </div>
-
       {/* Sobre nós */}
       <section id="sobre-nos" className="relative z-10 px-4 py-10 sm:px-10">
         <h2 className="text-lg sm:text-xl font-semibold text-[color:var(--title)] mb-6 text-left sm:text-left">
           SOBRE NÓS
         </h2>
-        <div className="flex flex-col sm:flex-row gap-8 justify-start pl-6 sm:pl-10">
+
+        <div className="flex flex-col sm:flex-row gap-8 justify-start pl-2 sm:pl-10">
           {[
-            { name: 'Julia Garcia', image: '/julia.png' },
-            { name: 'Raquel da Silva', image: '/raquel.png' },
-          ].map(({ name, image }) => (
-            <div key={name} className="group max-w-[250px] w-full relative">
+            { name: 'Julia Garcia', image: '/julia.png', role: 'Pro' },
+            { name: 'Raquel da Silva', image: '/raquel.png', role: 'Pro' },
+          ].map(({ name, image, role }) => (
+            <div
+              key={name}
+              className="
+          group flex items-center gap-4
+          sm:block sm:max-w-[250px] sm:w-full sm:relative
+        "
+            >
+              {/* Imagem */}
               <Image
                 src={image}
-                width={250}
-                height={250}
+                width={160} // mobile
+                height={160}
                 alt={`Foto da desenvolvedora ${name}`}
-                className="border-4 border-[var(--primary-color)] rounded-lg object-cover w-full h-auto"
+                className="
+            border-4 border-[var(--primary-color)] rounded-lg object-cover
+            sm:w-full sm:h-auto
+          "
               />
-              <div className="absolute inset-0 bg-[var(--bg-images)] rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center flex-col text-white">
+
+              {/* Texto no mobile */}
+              <div className="sm:hidden flex flex-col">
+                <h3 className="text-sm font-semibold text-[color:var(--title)]">
+                  {name}
+                </h3>
+                <p className="text-xs mt-1 text-[color:var(--subtitle)]">
+                  {role}
+                </p>
+              </div>
+
+              {/* Overlay no desktop */}
+              <div className="
+          hidden sm:flex sm:absolute sm:inset-0 sm:bg-[var(--bg-images)]
+          sm:rounded-lg sm:opacity-0 sm:group-hover:opacity-100 sm:transition
+          sm:duration-300 sm:items-center sm:justify-center sm:flex-col sm:text-white
+        ">
                 <h3 className="text-sm font-semibold">{name}</h3>
-                <p className="text-xs mt-1">Pro</p>
+                <p className="text-xs mt-1">{role}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
+
+
 
       {/* Últimas Documentações */}
       <section className="relative z-10 px-4 py-10 sm:px-10">
