@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from 'next/link';
+import { useState } from "react";
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-export default function Sidebar() {
+export default function Sidebar({ onLinkClick }) {
     const [openMenus, setOpenMenus] = useState([]);
 
     const toggleMenu = (menuName) => {
@@ -15,25 +15,35 @@ export default function Sidebar() {
         );
     };
 
+    // Chama onLinkClick se existir (para fechar menu no mobile)
+    const handleClick = () => {
+        if (onLinkClick) onLinkClick();
+    };
+
     return (
-        <nav className="pl-7">
+        <nav className="pl-7 pr-4">
             <h2 className="font-bold text-xl">Diário de bordo</h2>
             <div className="mt-5">
                 <ul className="text-[color:var(--title)] flex flex-col gap-2">
                     <li>
-                        <Link href="/docs/introducao">Introdução</Link>
+                        <Link className='hover:text-[color:var(--secondary-color)]' href="/docs/introducao" onClick={handleClick}>Introdução</Link>
                     </li>
                     <li>
-                        <Link href="/docs/pre-requisitos">Pré-requisitos</Link>
+                        <Link className='hover:text-[color:var(--secondary-color)]' href="/docs/pre-requisitos" onClick={handleClick}>Pré-requisitos</Link>
                     </li>
                     <li>
-                        <Link href="/docs/interface-e-navegacao">Interface e Navegação</Link>
+                        <Link className='hover:text-[color:var(--secondary-color)]' href="/docs/interface-e-navegacao" onClick={handleClick}>Interface e Navegação</Link>
                     </li>
                     <li>
-                        <button onClick={() => toggleMenu("funcionalidades-principais")}
-                            className="flex flex-row gap-3 items-center">
-                            Funcionalidades Principais
-                            <span>
+                        <button
+                            onClick={() => toggleMenu("funcionalidades-principais")}
+                            className="flex flex-row gap-3 items-start hover:text-[color:var(--secondary-color)]"
+                            aria-expanded={openMenus.includes("funcionalidades-principais")}
+                        >
+                            <span className="block text-left">
+                                Funcionalidades Principais
+                            </span>
+                            <span className="flex-shrink-0 mt-1">
                                 {openMenus.includes("funcionalidades-principais") ? (
                                     <ChevronUp size={18} />
                                 ) : (
@@ -41,15 +51,25 @@ export default function Sidebar() {
                                 )}
                             </span>
                         </button>
+
+
                         {openMenus.includes("funcionalidades-principais") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="/docs/funcionalidades-principais/preenchimento-representantes" className="underline underline-offset-1">
+                                    <Link
+                                        href="/docs/funcionalidades-principais/preenchimento-representantes"
+                                        className="underline underline-offset-1 hover:text-[color:var(--secondary-color)]"
+                                        onClick={handleClick}
+                                    >
                                         Preenchimento Diário pelos Representantes
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/docs/funcionalidades-principais/edicao-adm" className="underline underline-offset-1">
+                                    <Link
+                                        href="/docs/funcionalidades-principais/edicao-adm"
+                                        className="underline underline-offset-1 hover:text-[color:var(--secondary-color)]"
+                                        onClick={handleClick}
+                                    >
                                         Edição e Personalização pela Equipe Pedagógica
                                     </Link>
                                 </li>
@@ -57,13 +77,16 @@ export default function Sidebar() {
                         )}
                     </li>
                     <li>
-                        <Link href="/docs/configuracoes-e-personalizacao">
+                        <Link className='hover:text-[color:var(--secondary-color)]' href="/docs/configuracoes-e-personalizacao" onClick={handleClick}>
                             Configurações e Personalização
                         </Link>
                     </li>
                     <li>
-                        <button onClick={() => toggleMenu("recursos-uteis")}
-                            className="flex flex-row gap-3 items-center">
+                        <button
+                            onClick={() => toggleMenu("recursos-uteis")}
+                            className="flex flex-row gap-3 items-center hover:text-[color:var(--secondary-color)]"
+                            aria-expanded={openMenus.includes("recursos-uteis")}
+                        >
                             Recursos Úteis
                             <span>
                                 {openMenus.includes("recursos-uteis") ? (
@@ -76,18 +99,28 @@ export default function Sidebar() {
                         {openMenus.includes("recursos-uteis") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">
                                 <li>
-                                    <Link href="/docs/recursos-uteis/erros-comuns-e-solucoes" className="underline underline-offset-1">
+                                    <Link
+                                        href="/docs/recursos-uteis/erros-comuns-e-solucoes"
+                                        className="underline underline-offset-1 hover:text-[color:var(--secondary-color)]"
+                                        onClick={handleClick}
+                                    >
                                         Erros Comuns e Soluções
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/docs/recursos-uteis/dicas-e-atalhos" className="underline underline-offset-1">Dicas e Atalhos</Link>
+                                    <Link
+                                        href="/docs/recursos-uteis/dicas-e-atalhos"
+                                        className="underline underline-offset-1 hover:text-[color:var(--secondary-color)]"
+                                        onClick={handleClick}
+                                    >
+                                        Dicas e Atalhos
+                                    </Link>
                                 </li>
                             </ul>
                         )}
                     </li>
                     <li>
-                        <Link href="/docs/referencias-e-creditos">
+                        <Link className='hover:text-[color:var(--secondary-color)]' href="/docs/referencias-e-creditos" onClick={handleClick}>
                             Referências e Créditos
                         </Link>
                     </li>

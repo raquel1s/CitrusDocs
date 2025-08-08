@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="relative z-10 overflow-x-hidden">
-      {/* Limão de fundo, responsivo e sem vazamento lateral */}
+      
       <div
         className="
           absolute 
@@ -19,7 +19,7 @@ export default function Home() {
         style={{ maxWidth: 'calc(100vw - 32px)' }}
       ></div>
 
-      {/* Cabeçalho da home */}
+    
       <div className="relative z-10 px-4 pt-[220px] pb-24 sm:px-10 sm:pt-24">
         <header className="text-center">
           <h1 className="text-2xl sm:text-4xl font-bold text-[color:var(--title)] leading-snug">
@@ -36,7 +36,7 @@ export default function Home() {
           </Link>
         </header>
       </div>
-      {/* Sobre nós */}
+      
       <section id="sobre-nos" className="relative z-10 px-4 py-10 sm:px-10">
         <h2 className="text-lg sm:text-xl font-semibold text-[color:var(--title)] mb-6 text-left sm:text-left">
           SOBRE NÓS
@@ -44,8 +44,8 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row gap-8 justify-start pl-2 sm:pl-10">
           {[
-            { name: 'Julia Garcia', image: '/julia.png', role: 'Pro' },
-            { name: 'Raquel da Silva', image: '/raquel.png', role: 'Pro' },
+            { name: 'Julia Garcia', image: '/julia.png', role: 'Programadora' },
+            { name: 'Raquel da Silva', image: '/raquel.png', role: 'Programadora' },
           ].map(({ name, image, role }) => (
             <div
               key={name}
@@ -54,10 +54,9 @@ export default function Home() {
           sm:block sm:max-w-[250px] sm:w-full sm:relative
         "
             >
-              {/* Imagem */}
               <Image
                 src={image}
-                width={160} // mobile
+                width={160} 
                 height={160}
                 alt={`Foto da desenvolvedora ${name}`}
                 className="
@@ -66,7 +65,6 @@ export default function Home() {
           "
               />
 
-              {/* Texto no mobile */}
               <div className="sm:hidden flex flex-col">
                 <h3 className="text-sm font-semibold text-[color:var(--title)]">
                   {name}
@@ -76,7 +74,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Overlay no desktop */}
               <div className="
           hidden sm:flex sm:absolute sm:inset-0 sm:bg-[var(--bg-images)]
           sm:rounded-lg sm:opacity-0 sm:group-hover:opacity-100 sm:transition
@@ -92,7 +89,6 @@ export default function Home() {
 
 
 
-      {/* Últimas Documentações */}
       <section className="relative z-10 px-4 py-10 sm:px-10">
         <h2 className="text-lg sm:text-xl font-semibold text-[color:var(--title)] mb-6 text-left sm:text-left">
           ÚLTIMAS DOCUMENTAÇÕES
