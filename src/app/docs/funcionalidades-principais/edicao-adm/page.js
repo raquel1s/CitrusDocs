@@ -21,13 +21,12 @@ export default function EdicaoPedagogico(){
                 />
             <h3>2. Crie uma nova seção para a turma</h3>
             <ul>
-                <li>Vá ao final do formulário e clique em “Adicionar seção” (ícone de duas barras);</li>
-                <li>Nomeie a nova seção com o nome da turma e curso (ex: Registro - MI81);</li>
-                <li>Copie o conteúdo de uma seção existente de turma semelhante;</li>
-                <li>Atualize os dados conforme a nova turma</li>
+                <li>Duplique uma seção de regitro existente de turma semelhante (3 pontinhos ao lado do nome da seção);</li>
+                <li>Nomeie a nova seção com o nome da turma (ex: Registro - MI81);</li>
+                <li>Atualize os dados conforme a nova turma.</li>
             </ul>
             <Image
-                    src="/adicionando-sessao.png"
+                    src="/duplicar-sessao.png"
                     alt="ir em adicionar nova seção"
                     width={650}
                     height={300}
