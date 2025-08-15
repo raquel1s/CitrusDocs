@@ -10,7 +10,7 @@ export default function ErrosComuns(){
             <p><span>Causa comum: </span>Redirecionamento ausente/incorreto.</p>
             <p><span>Como Corrigir: </span>Ativar e revisar a opção “Ir para a seção com base na resposta”.</p>
             <Image
-                className="pt-5 pb-10"
+                className="custom-img"
                 src="/form-nao-redireciona.png"
                 alt="Indicando onde fica ir para seção com base na resposta"
                 width={550}
@@ -21,7 +21,7 @@ export default function ErrosComuns(){
             <p><span>Causa comum: </span>Lista desatualizada</p>
             <p><span>Como corrigir: </span>Atualizar a pergunta múltipla escolha</p>
             <Image
-                className="pt-5 pb-10"
+                className="custom-img"
                 src="/repre-nao-aparece.png"
                 alt="Campo de representante"
                 width={550}
@@ -32,7 +32,7 @@ export default function ErrosComuns(){
             <p><span>Causa comum: </span>Campo “Alunos ausentes” desatualizado</p>
             <p><span>Como corrigir: </span>Inserir o nome na seção da turma</p>
             <Image
-                className="pt-5 pb-10"
+                className="custom-img"
                 src="/aluno-nao-encontrado.png"
                 alt="Campo de alunos ausentes"
                 width={550}
@@ -43,7 +43,7 @@ export default function ErrosComuns(){
             <p><span>Causa comum: </span>Grade incompleta</p>
             <p><span>Como corrigir: </span>Editar diretamente a grade e adicionar a UC/professor</p>
             <Image
-                className="pt-5 pb-10"
+                className="custom-img"
                 src="/prof-nao-aparece.png"
                 alt="Grade de professores e unidades curriculares"
                 width={550}

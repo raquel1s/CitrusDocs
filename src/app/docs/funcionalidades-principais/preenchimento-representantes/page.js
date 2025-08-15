@@ -9,6 +9,7 @@ export default function PreenchimentoRepresentantes() {
             <p>1. Acesse o link do formulário compartilhado com sua turma;</p>
             <p>2. Selecione o curso e a turma correspondente;</p>
             <Image
+                className="custom-img"
                 src="/selecione-seu-curso.png"
                 alt="Campo de seleção de curso"
                 width={550}
@@ -16,7 +17,7 @@ export default function PreenchimentoRepresentantes() {
             />
 
             <Image
-                className="pt-5 pb-10"
+                className="custom-img"
                 src="/selecione-turma.png"
                 alt="Campo de seleção de turma"
                 width={550}
@@ -26,7 +27,7 @@ export default function PreenchimentoRepresentantes() {
             <ul>
                 <li>Representante;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/nome-representante.png"
                     alt="Campo de representante"
                     width={550}
@@ -34,7 +35,7 @@ export default function PreenchimentoRepresentantes() {
                 />
                 <li>Data;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/data-expediente.png"
                     alt="Campo de seleção da data"
                     width={550}
@@ -42,7 +43,7 @@ export default function PreenchimentoRepresentantes() {
                 />
                 <li>Alunos ausentes;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/alunos-ausentes.png"
                     alt="Campo de seleção de alunos ausentes"
                     width={550}
@@ -50,7 +51,7 @@ export default function PreenchimentoRepresentantes() {
                 />
                 <li>UC e professor de cada período;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/unidade-e-professor.png"
                     alt="Campo de seleção de unidade e professor"
                     width={550}
@@ -58,7 +59,7 @@ export default function PreenchimentoRepresentantes() {
                 />
                 <li>Descrição do conteúdo.</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/descricao.png"
                     alt="Campo de seleção de descrição do dia"
                     width={550}

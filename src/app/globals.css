@@ -54,3 +54,7 @@ body {
 .main-content a{
   @apply hover:text-[var(--primary-color)]
 }
+
+.custom-img {
+  @apply cursor-pointer rounded-lg shadow-md transition-transform hover:scale-105 my-9;
+}

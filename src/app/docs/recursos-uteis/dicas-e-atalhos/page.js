@@ -8,7 +8,7 @@ export default function DicasAtalhos(){
             <ul>
                 <li>Utilize Visualização após cada edição para checar o funcionamento;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/usar-visualizar.png"
                     alt="Icone de visualizar"
                     width={250}
@@ -16,7 +16,7 @@ export default function DicasAtalhos(){
                 />
                 <li>Faça backups regulares do formulário;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/fazer-backups.png"
                     alt="Imagem de funcionalidade de fazer cópia"
                     width={350}
@@ -25,7 +25,7 @@ export default function DicasAtalhos(){
                 <li>Evite edições simultâneas;</li>
                 <li>Duplique seções semelhantes para ganhar agilidade;</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/duplicar-sessao.png"
                     alt="imagem indicando onde duplicar a seção"
                     width={750}
@@ -34,7 +34,7 @@ export default function DicasAtalhos(){
                 <li>Registre grandes alterações em uma planilha de controle.</li>
                 <li>Padronize nomes: ex. "MI80" e não "mi80";</li>
                 <Image
-                    className="pt-5 pb-10"
+                    className="custom-img"
                     src="/padronizar-nomes.png"
                     alt="Imagem de exemplo para nomes"
                     width={250}

@@ -23,6 +23,7 @@ export default function InterfaceNavegacao(){
             <ul>
                 <li>Campo com nome do representante;</li>
                 <Image
+                    className="custom-img"
                     src="/nome-representante.png"
                     alt="campo com o nome do representante"
                     width={650}
@@ -30,6 +31,7 @@ export default function InterfaceNavegacao(){
                 />
                 <li>Data do expediente (com orientação de preenchimento);</li>
                 <Image
+                    className="custom-img"
                     src="/data-expediente.png"
                     alt="campo com a data do expediente"
                     width={650}
@@ -37,6 +39,7 @@ export default function InterfaceNavegacao(){
                 />
                 <li>Lista de alunos ausentes;</li>
                 <Image
+                    className="custom-img"
                     src="/alunos-ausentes.png"
                     alt="campo com os alunos ausentes"
                     width={650}
@@ -44,6 +47,7 @@ export default function InterfaceNavegacao(){
                 />
                 <li>Seleção de unidade curricular e professor (1º e 2º períodos);</li>
                 <Image
+                    className="custom-img"
                     src="/unidade-e-professor.png"
                     alt="campo com a unidade e o professor"
                     width={650}
@@ -51,6 +55,7 @@ export default function InterfaceNavegacao(){
                 />
                 <li>Campo de descrição das atividades realizadas (1º e 2º períodos).</li>
                 <Image
+                    className="custom-img"
                     src="/descricao.png"
                     alt="campo com a descrição"
                     width={650}

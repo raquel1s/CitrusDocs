@@ -9,6 +9,9 @@ export default function DocLayout({ children }) {
   const [titles, setTitles] = useState([]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState('');
+
   useEffect(() => {
     const h2Elements = contentRef.current?.querySelectorAll('h2') || [];
 
@@ -19,6 +22,21 @@ export default function DocLayout({ children }) {
     });
 
     setTitles(list);
+
+    const images = contentRef.current?.querySelectorAll('img') || [];
+    images.forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        setLightboxSrc(img.src);
+        setLightboxOpen(true);
+      });
+    });
+
+    return () => {
+      images.forEach(img => {
+        img.removeEventListener('click', () => {});
+      });
+    };
   }, []);
 
   function handleCloseMenu() {
@@ -82,6 +100,20 @@ export default function DocLayout({ children }) {
             <Sidebar onLinkClick={handleCloseMenu} />
           </aside>
         </>
+      )}
+
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <img
+            src={lightboxSrc}
+            alt="Imagem expandida"
+            className="max-w-[90%] max-h-[90%] rounded-lg shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
       )}
     </>
   );

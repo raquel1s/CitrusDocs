@@ -1,11 +1,21 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function Sidebar({ onLinkClick }) {
-    const [openMenus, setOpenMenus] = useState([]);
+    const [openMenus, setOpenMenus] = useState(() => {
+        if (typeof window !== "undefined") {
+            const saved = localStorage.getItem("openMenus");
+            return saved ? JSON.parse(saved) : [];
+        }
+        return [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem("openMenus", JSON.stringify(openMenus));
+    }, [openMenus]);
 
     const toggleMenu = (menuName) => {
         setOpenMenus(prev =>
@@ -15,7 +25,6 @@ export default function Sidebar({ onLinkClick }) {
         );
     };
 
-    // Chama onLinkClick se existir (para fechar menu no mobile)
     const handleClick = () => {
         if (onLinkClick) onLinkClick();
     };
@@ -51,7 +60,6 @@ export default function Sidebar({ onLinkClick }) {
                                 )}
                             </span>
                         </button>
-
 
                         {openMenus.includes("funcionalidades-principais") && (
                             <ul className="text-[color:var(--title)] flex flex-col gap-2 text-sm my-2 pl-3">

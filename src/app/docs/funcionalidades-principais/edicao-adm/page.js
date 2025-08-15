@@ -13,7 +13,8 @@ export default function EdicaoPedagogico(){
                 <li>Clique na pergunta do tipo múltipla escolha chamada “Selecione sua turma”;</li>
                 <li>Adicione a nova turma na última opção (ex: MI81).</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/acesse-pergunta.png"
                     alt="pergunta selecione a turma"
                     width={650}
@@ -25,7 +26,8 @@ export default function EdicaoPedagogico(){
                 <li>Nomeie a nova seção com o nome da turma (ex: Registro - MI81);</li>
                 <li>Atualize os dados conforme a nova turma.</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/duplicar-sessao.png"
                     alt="ir em adicionar nova seção"
                     width={650}
@@ -36,14 +38,16 @@ export default function EdicaoPedagogico(){
                 <li>Volte à pergunta “Selecione sua turma”;</li>
                 <li>Clique nos três pontos (⋮) da pergunta e ative “Ir para a seção com base na resposta”;</li>
                 <Image 
-                src="/opcao-ir-para-sessao.png"
-                alt="imagem indicando onde fica a opção ir para a seção com base na resposta"
-                width={650}
-                height={300}
-            />
+                    className="custom-img"
+                    src="/opcao-ir-para-sessao.png"
+                    alt="imagem indicando onde fica a opção ir para a seção com base na resposta"
+                    width={650}
+                    height={300}
+                />
                 <li>Ao lado da nova turma, selecione a seção correspondente que você criou.</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/redirecionando.png"
                     alt="imagem mostrando onde podemos redirecionar para a seção correta"
                     width={650}
@@ -55,7 +59,8 @@ export default function EdicaoPedagogico(){
                 <li>Tipo: Múltipla escolha</li>
                 <li>Atualize com os nomes atuais dos representantes</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/editando-repre.png"
                     alt="pergunta para editar representante"
                     width={650}
@@ -65,7 +70,8 @@ export default function EdicaoPedagogico(){
             <ul>
                 <li>Tipo: Campo de data ou resposta curta com instrução “dia/mês/ano”</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/editanto_data.png"
                     alt="pergunta para editar a data"
                     width={650}
@@ -76,7 +82,8 @@ export default function EdicaoPedagogico(){
                 <li>Tipo: Caixas de seleção</li>
                 <li>Atualize conforme a lista atual de alunos</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/editando-alunos.png"
                     alt="pergunta para editar os alunos"
                     width={650}
@@ -88,7 +95,8 @@ export default function EdicaoPedagogico(){
                 <li>Linhas: UCs | Colunas: Professores</li>
                 <li>Adicione mais uma grade para cursos de dois períodos</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/editando-UC-prof.png"
                     alt="pergunta para editar a unidade curricular e o professor"
                     width={650}
@@ -99,7 +107,8 @@ export default function EdicaoPedagogico(){
                 <li>Tipo: Parágrafo</li>
                 <li>Espaço para detalhar o conteúdo dado</li>
             </ul>
-            <Image
+                <Image
+                    className="custom-img"
                     src="/editando-descricao.png"
                     alt="pergunta para editar a descrição"
                     width={650}
@@ -108,14 +117,16 @@ export default function EdicaoPedagogico(){
             <h2>Excluindo uma turma</h2>
             <ul>
                 <li>Remova a opção da turma na pergunta “Selecione sua turma”;</li>
-                <Image 
+                <Image
+                    className="custom-img"
                     src="/excluir-selecione-turma.png"
                     alt="remover opção da pergunta selecione sua turma"
                     width={650}
                     height={300}
                 />
                 <li>Delete a seção correspondente à turma no final do formulário.</li>
-                <Image 
+                <Image
+                    className="custom-img"
                     src="/excluir-sessao-turma.png"
                     alt="remover opção da pergunta selecione sua turma"
                     width={650}
@@ -126,7 +137,8 @@ export default function EdicaoPedagogico(){
             <h2>Criando um novo curso</h2>
             <h3>1. Acesse a pergunta "Selecione seu curso"</h3>
             <p>Localize a pergunta do tipo múltipla escolha chamada “Selecione seu curso”.</p>
-            <Image 
+            <Image
+                className="custom-img"
                 src="/selecione-seu-curso.png"
                 alt="selecione a pergunta selecione seu curso"
                 width={650}
@@ -135,7 +147,8 @@ export default function EdicaoPedagogico(){
 
             <h3>2. Adicione o novo curso na última opção</h3>
             <p>Clique para editar as opções e insira o nome do novo curso (ex: “Engenharia de Software”).</p>
-            <Image 
+            <Image
+                className="custom-img"
                 src="/crie-nova-opcao.png"
                 alt="imagem mostrando como criar uma nova opção"
                 width={650}
@@ -144,7 +157,8 @@ export default function EdicaoPedagogico(){
 
             <h3>3. Crie uma nova seção para o curso</h3>
             <p>Vá ao final do formulário e clique em “Adicionar seção” (ícone de duas barras).</p>
-            <Image 
+            <Image
+                className="custom-img"
                 src="/adicionando-sessao.png"
                 alt="imagem mostrando como adicionar uma nova seção"
                 width={650}
@@ -153,7 +167,8 @@ export default function EdicaoPedagogico(){
 
             <h3>4. Nomeie a nova seção com o nome do curso</h3>
             <p>Exemplo: “Engenharia de Software”.</p>
-            <Image 
+            <Image
+                className="custom-img"
                 src="/selecione-turma.png"
                 alt="imagem mostrando a pergunta selecione sua turma, exemplo de titulo"
                 width={650}
@@ -164,7 +179,8 @@ export default function EdicaoPedagogico(){
             <p>Volte à pergunta “Selecione seu curso”.</p>
 
             <p>Clique nos três pontos (⋮) da pergunta e ative “Ir para a seção com base na resposta”.</p>
-            <Image 
+            <Image
+                className="custom-img"
                 src="/opcao-ir-para-sessao.png"
                 alt="selecione a pergunta selecione seu curso"
                 width={650}
@@ -172,6 +188,7 @@ export default function EdicaoPedagogico(){
             />
             <p>Ao lado do novo curso, selecione a seção correspondente que você criou.</p>
             <Image 
+                className="custom-img"
                 src="/redirecionando.png"
                 alt="imagem mostrando como fazer o redirecionamento"
                 width={650}
