@@ -25,7 +25,7 @@ export default function PreRequisitos(){
             </ul>
             <p>Recomenda-se o uso de notebook ou computador para a equipe pedagógica, especialmente ao editar formulários ou analisar dados na planilha.</p>
 
-            <h2>Cadastro e acesso (se aplicável)</h2>
+            <h2>Cadastro e acesso</h2>
             <ul>
                 <li>O formulário está configurado para coletar automaticamente o e-mail institucional dos representantes de turma no momento do envio;</li>
                 <li>Apenas usuários com contas autorizadas (da instituição) podem acessar e preencher o formulário;</li>
