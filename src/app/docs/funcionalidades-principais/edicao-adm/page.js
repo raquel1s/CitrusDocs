@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function EdicaoPedagogico(){
     return(
         <DocLayout>
-            <h1>EDIÇÃO E PERSONALIZAÇÃO PELA EQUIPE PEDAGÓGICA</h1>
+            <h1>EDIÇÃO E PERSONALIZAÇÃO PELO ADMINISTRADOR</h1>
 
             <h2>Adicionando uma nova turma</h2>
             <h3>1. Acesse a pergunta "Selecione sua turma"</h3>

@@ -78,7 +78,7 @@ export default function Sidebar({ onLinkClick }) {
                                         className="underline underline-offset-1 hover:text-[color:var(--secondary-color)]"
                                         onClick={handleClick}
                                     >
-                                        Edição e Personalização pela Equipe Pedagógica
+                                        Edição e Personalização pelo administrador
                                     </Link>
                                 </li>
                                 <li>
