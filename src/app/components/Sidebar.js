@@ -81,6 +81,15 @@ export default function Sidebar({ onLinkClick }) {
                                         Edição e Personalização pela Equipe Pedagógica
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        href="/docs/funcionalidades-principais/vizualizar-dados-equipe"
+                                        className="underline underline-offset-1 hover:text-[color:var(--secondary-color)]"
+                                        onClick={handleClick}
+                                    >
+                                        Visualização de Dados pela Equipe Pedagógica
+                                    </Link>
+                                </li>
                             </ul>
                         )}
                     </li>

@@ -30,7 +30,8 @@ export default function Home() {
           </p>
           <Link
             href="/docs/introducao"
-            className="inline-block mt-6 px-5 py-2 bg-[var(--primary-color)] text-white rounded-md text-sm sm:text-base hover:bg-[var(--secondary-color)] transition-colors duration-300"
+            className="inline-block mt-6 px-5 py-2 bg-[var(--primary-color)] text-white rounded-md text-sm sm:text-base
+             hover:bg-[var(--secondary-color)] transition-colors duration-300"
           >
             Confira nossa última documentação
           </Link>
